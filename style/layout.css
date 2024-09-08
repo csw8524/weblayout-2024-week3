@@ -54,7 +54,140 @@
   }
 }
 
+/* footer */
+
 .footer {
-  background: #000;
   color: #fff;
+  padding: 48px 0 32px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__link-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.link-list__item {
+  margin-right: 48px;
+}
+
+.link-list__item:last-child {
+  margin-right: 0;
+}
+
+.com-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 36px;
+}
+
+.material-symbols-outlined {
+  font-size: 48px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.com-list__item span {
+  margin-right: 20px;
+}
+
+.footer-right__social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item {
+  margin-right: 32px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-list__item img{
+  width: 48px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.footer-bottom__link-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-link-list__item {
+  margin-right: 48px;
+  font-size: 14px;
+}
+
+.bottom-link-list__item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 0;
+  }
+
+  .footer-top {
+    padding-bottom: 24px;
+  }
+
+  .footer__link-list {
+    display: none;
+  }
+
+  .com-list__item {
+    font-size: 16px;
+  }
+
+  span.material-symbols-outlined {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .social-list__item img {
+    width: 24px;
+  }
+
+  .footer-bottom {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .footer-bottom__link-list {
+    display: block;
+  }
+
+  .footer-bottom__text {
+    margin-bottom: 8px;
+  }
+
+  .bottom-link-list__item {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+  }
+
+  .bottom-link-list__item:last-child {
+    margin-bottom: 0;
+  }
 }
